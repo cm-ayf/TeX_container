@@ -17,7 +17,7 @@ Homebrew・VSCodeがインストールされた前提．
 1.  `docker build -t texlive .`
 
 ##  テスト 
-インストールに続けて．
+LaTeX WorkshopがVSCodeに追加されている前提．インストールに続けて．
 1.  [test.tex](test/test.tex)を開く
 1.  左側のメニューの`TeX`から`Build LaTeX project`をクリック
 
