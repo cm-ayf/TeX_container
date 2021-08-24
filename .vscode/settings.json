@@ -1,0 +1,92 @@
+{
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.chktex.args.active": [
+        "-n3",
+        "-n8",
+        "-n18",
+        "-n19",
+        "-n25",
+        "-n36",
+        "-n46"
+    ],
+    "latex-workshop.docker.enabled": true,
+    "latex-workshop.docker.image.latex": "texlive",
+    "latex-workshop.intellisense.useTabStops.enabled": false,
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.dvi",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.xdv",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.synctex(busy)",
+        "*.synctex.gz(busy)",
+        "*.nav"
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "uplatex + dvipdfmx",
+            "tools": [
+                "latexmk",
+            ]
+        },
+        {
+            "name": "xelatex + xdvipdfmx",
+            "tools": [
+                "latexmk -xelatex",
+            ]
+        },
+        {
+            "name": "lualatex",
+            "tools": [
+                "latexmk -lualatex",
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "%DOC%",
+            ]
+        },
+        {
+            "name": "latexmk -xelatex",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "%DOC%",
+            ]
+        },
+        {
+            "name": "latexmk -lualatex",
+            "command": "latexmk",
+            "args": [
+                "-lualatex",
+                "%DOC%",
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+}
