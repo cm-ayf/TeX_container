@@ -10,7 +10,7 @@ Side` しよう -->
 Homebrew・VSCodeがインストールされた前提．
 1.  `git clone https://github.com/cm-ayf/TeX_container`
 1.  このフォルダをVSCodeで開く
-    *   `rm .git`しておくと表示がうるさくならない
+    *   開いた後`rm -rf .git`しておくと表示がうるさくならない
 1.  `brew install --cask docker`
 1.  `open /Applications/Docker.app`
     *   パスワードを要求される
